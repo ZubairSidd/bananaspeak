@@ -1,24 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Banana Speak</title>
-    
+    <style>
+        textarea{
+            width: 80%;
+            margin: 1rem;
+            padding: 1rem;
+            height: 15vh;
+        }
+        #output{
+            border: 1px solid black;
+            width: 80%;
+            margin: 1rem;
+            padding: 1rem;
+            height: 15vh;
+        }
+        #copy{
+            margin-inline-start: 1rem;
+            margin-bottom: 5px;
+        }
+    </style>
+
 </head>
+
 <body>
     <h1>Talk Banana</h1>
-    
-    <button id="click">Translate</button>
-    
-    <hr>
-    
-    <textarea name="input" id="input" cols="50" rows="10"></textarea>
 
-    <button id="copy">console</button>
+    <textarea placeholder="Enter Your english text here" name="input" id="input"></textarea>
+
+    <button id="copy">Translate</button>
     <div id="output"></div>
 
     <script src="/app.js" type="text/javascript"></script>
 </body>
+
 </html>
