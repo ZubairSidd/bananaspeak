@@ -17,6 +17,7 @@ function clickEventHandler() {
     fetch(getTranslationURL(inputText))
     .then(response => response.json())
     .then(json => outputPlace.innerText = json.contents.translated)
+    .catch(errorHandler)
 }
 
 copyBtn.addEventListener("click",clickEventHandler)
